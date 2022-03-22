@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+body {
+    background-color: #f8f0d5;
+    /*background-image: url("../public/kalendarz2.jpg");*/
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-container {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+    background-image: url("../public/kalendarz2.jpg");
+    background-size: cover;
+    /*backdrop-filter: blur(8px);*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    background-color: wheat;
+    flex-basis: 40%;
+    box-shadow: 0 0 2px 1px gray;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form__title {
+    flex-basis: 100%;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.form__input {
+    padding: 10px 20px;
+    font-size: 16px;
+    flex-basis: 40%;
+    margin: 15px 0;
+    border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form__button {
+    margin: 30px 0;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: black;
+    color: wheat;
+    text-transform: uppercase;
+    flex-basis: 40%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.result, .footer {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.result {
+    color:black;
+
+}
+
+.footer {
+    /*background-color: #4b4949;*/
+    color: #81807f;
+    /*border-radius: 5px;*/
+    height: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #81807f;
+}
+a:hover {
+    color: wheat;
+}
+
+.footer_p {
+    font-size: 10px;
 }
